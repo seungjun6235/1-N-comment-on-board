@@ -9,4 +9,5 @@ class Article(models.Model):
 class Comment(models.Model):
     content = models.TextField()
     article = models.ForeignKey(Article,on_delete=models.CASCADE)
+    # article_id를 자동으로 생성하줌 장고가
 
